@@ -9,8 +9,7 @@ function App() {
             <Navbar/>
         </div>
 
-
-        <div className="grid">
+        <div className="grid grid-cols-3">
             <CandidatesList />
         </div>
     </>

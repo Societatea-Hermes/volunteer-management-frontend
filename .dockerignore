@@ -1,0 +1,8 @@
+.git
+./volunteer-management/node_modules/
+Dockerfile
+.gitignore
+docker-compose.yml
+./volunteer-management/.eslintrc.cjs
+README.md
+LICENSE

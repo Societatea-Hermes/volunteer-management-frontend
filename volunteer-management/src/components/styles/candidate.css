@@ -1,0 +1,11 @@
+.container-details {
+    @apply grid grid-cols-4 gap-0 justify-center
+}
+
+.details-icon {
+    @apply w-7 col-span-1
+}
+
+.details-text {
+    @apply text-lg text-black font-bold col-span-3 text-left -ml-6
+}

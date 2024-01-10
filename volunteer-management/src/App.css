@@ -1,0 +1,3 @@
+.list-types-btn {
+    @apply col-span-1 text-xl text-white font-bold btn bg-red-700 hover:bg-red-800 btn-lg
+}

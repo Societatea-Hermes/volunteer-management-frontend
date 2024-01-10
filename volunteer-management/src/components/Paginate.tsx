@@ -13,19 +13,19 @@ function Paginate(props: PaginateProps) {
   }
 
   return (
-    <ul className="join">
-      {pageNumbers.map((number) => (
-      number === props.currentActive ? (
-        <li key={number} className="join-item btn btn-lg hover:bg-gray-800" onClick={() => {props.paginate(number)}}>
-          {number}
-        </li>
-      )  : (
-        <li key={number} className="join-item btn btn-lg hover:bg-gray-800 btn-active" onClick={() => {props.paginate(number)}}>
-          {number}
-        </li>
-      )
-      ))}
-    </ul>
+      <ul className="join">
+        {pageNumbers.map((number) => (
+            number === props.currentActive ? (
+                <li key={number + " page"} className="join-item btn btn-lg hover:bg-gray-800" onClick={() => {props.paginate(number)}}>
+                  {number}
+                </li>
+            )  : (
+                <li key={number} className="join-item btn btn-lg hover:bg-gray-800 btn-active" onClick={() => {props.paginate(number)}}>
+                  {number}
+                </li>
+            )
+        ))}
+      </ul>
   );
 }
 

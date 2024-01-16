@@ -40,18 +40,18 @@ const Candidate = (props: CandidateProps) => {
         <li key={key} className="bg-zinc-200 collapse">
             <input type="checkbox"/>
             <div className="flex text-xl font-medium text-center collapse-title">
-                <div className="w-20 grid grid-cols-2">
+                <div className="grid w-20 grid-cols-2">
                     <a className="z-10" target={"_blank"} href={props.candidate.facebook_profile}>
                         <img src={fb} alt={"Facebook link"} />
                     </a>
-                    <a href={props.candidate.instagram_profile} target={"_blank"}>
+                    <a className="z-10" href={props.candidate.instagram_profile} target={"_blank"}>
                         <img src={ig} alt={"Insta link"} />
                     </a>
                 </div>
                 <p className="flex-1 text-xl font-bold text-black ">{`${props.candidate.first_name} ${props.candidate.last_name}`}</p>
                 <img className='w-10' src={statusIcon(props.candidate.recruitment_status)} alt="Status" />
             </div>
-            <div className="collapse-content grid grid-cols-2">
+            <div className="grid grid-cols-2 collapse-content">
                 <div className="grid grid-cols-1 col-span-1">
                     <div className="container-details">
                         <img src={email} alt={"Personal email: "} className="details-icon"/>

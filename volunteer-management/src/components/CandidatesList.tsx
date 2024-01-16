@@ -3,22 +3,22 @@ import { useState } from "react";
 import { mockCandidates } from "../assets/mocks.ts";
 import Candidate from "./Candidate.tsx";
 import Paginate from "./Paginate.tsx";
-import { API_BASE_URL, TOTAL_PER_PAGE } from "../assets/constants.ts";
+import { API_CANDIDATES_EP, TOTAL_PER_PAGE } from "../assets/constants.ts";
 import {effect, signal} from "@preact/signals-react";
+import axios from "axios";
 
 const candidates = signal(mockCandidates)
 
 effect(() => {
   const fetchCandidates = async () => {
     try {
-      const response = await fetch(API_BASE_URL);
-      const data = await response.json();
-      candidates.value = data;
+      const response = await axios.get(API_CANDIDATES_EP + "/");
+      candidates.value = response.data;
     } catch (error) {
       console.error("Error fetching candidates:", error);
     }
   };
-
+  
   fetchCandidates();
 })
 

@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.tsx";
 import "./App.css"
 import VolunteersList from "./components/VolunteersList.tsx";
 import {useState} from "react";
+import Tools from "./components/Tools.tsx";
 
 function App() {
     const [displayCandidates, setDisplayCandidates] = useState(true)
@@ -19,10 +20,14 @@ function App() {
         <div className="grid grid-cols-3">
             <div className="col-span-3 space-x-10 grid grid-cols-2 p-5">
                 <p className="text-xl text-white font-extrabold col-span-3 text-center pb-2">Choose the desired list</p>
-                <button className="list-types-btn" onClick={() => {changeDisplayedList(true)}}>
+                <button className="list-types-btn" onClick={() => {
+                    changeDisplayedList(true)
+                }}>
                     Candidates
                 </button>
-                <button className="list-types-btn" onClick={() => {changeDisplayedList(false)}}>
+                <button className="list-types-btn" onClick={() => {
+                    changeDisplayedList(false)
+                }}>
                     Volunteers
                 </button>
             </div>
@@ -31,9 +36,12 @@ function App() {
             ) : (
                 <VolunteersList/>
             )}
+            <div className="m-4">
+                <Tools/>
+            </div>
         </div>
     </>
-  )
+    )
 }
 
 export default App

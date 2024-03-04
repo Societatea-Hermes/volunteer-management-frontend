@@ -1,5 +1,6 @@
 export const mockCandidates: Candidate[] = [
     {
+        ID:1,
         first_name: "Daniel",
         last_name: "Ardelean",
         personal_email: "danicodes45@gmail.com",
@@ -17,6 +18,7 @@ export const mockCandidates: Candidate[] = [
         recruitment_campaign_id: "1",
     },
     {
+        ID:2,
         first_name: "Radu",
         last_name: "Bradu",
         personal_email: "some@gmail.com",
@@ -34,6 +36,7 @@ export const mockCandidates: Candidate[] = [
         recruitment_campaign_id: "1",
     },
     {
+        ID:3,
         first_name: "Nume3",
         last_name: "Prenume3",
         personal_email: "n2@example.com",
@@ -51,6 +54,7 @@ export const mockCandidates: Candidate[] = [
         recruitment_campaign_id: "1",
     },
     {
+        ID:4,
         first_name: "Nume4",
         last_name: "Prenume4",
         personal_email: "some@gmail.com",
@@ -68,6 +72,7 @@ export const mockCandidates: Candidate[] = [
         recruitment_campaign_id: "1",
     },
     {
+        ID:5,
         first_name: "Nume5",
         last_name: "Prenume5",
         personal_email: "some@gmail.com",
@@ -85,6 +90,7 @@ export const mockCandidates: Candidate[] = [
         recruitment_campaign_id: "2",
     },
     {
+        ID:6,
         first_name: "Nume6",
         last_name: "Prenume6",
         personal_email: "some@gmail.com",
@@ -102,6 +108,7 @@ export const mockCandidates: Candidate[] = [
         recruitment_campaign_id: "1",
     },
     {
+        ID:7,
         first_name: "Nume7",
         last_name: "Prenume7",
         personal_email: "some@gmail.com",
@@ -119,6 +126,7 @@ export const mockCandidates: Candidate[] = [
         recruitment_campaign_id: "1",
     },
     {
+        ID:8,
         first_name: "Nume8",
         last_name: "Prenume8",
         personal_email: "some@gmail.com",
@@ -136,6 +144,7 @@ export const mockCandidates: Candidate[] = [
         recruitment_campaign_id: "1",
     },
     {
+        ID:9,
         first_name: "Nume9",
         last_name: "Prenume9",
         personal_email: "some@gmail.com",
@@ -153,6 +162,7 @@ export const mockCandidates: Candidate[] = [
         recruitment_campaign_id: "1",
     },
     {
+        ID:10,
         first_name: "Nume10",
         last_name: "Prenume10",
         personal_email: "some@gmail.com",
@@ -170,6 +180,7 @@ export const mockCandidates: Candidate[] = [
         recruitment_campaign_id: "1",
     },
     {
+        ID:11,
         first_name: "Nume11",
         last_name: "Prenume11",
         personal_email: "some@gmail.com",
@@ -187,6 +198,7 @@ export const mockCandidates: Candidate[] = [
         recruitment_campaign_id: "1",
     },
     {
+        ID:12,
         first_name: "Nume12",
         last_name: "Prenume12",
         personal_email: "some@gmail.com",

@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar.tsx";
 import "./App.css"
 import VolunteersList from "./components/VolunteersList.tsx";
 import {useState} from "react";
-import Tools from "./components/Tools.tsx";
 
 function App() {
     const [displayCandidates, setDisplayCandidates] = useState(true)
@@ -36,9 +35,6 @@ function App() {
             ) : (
                 <VolunteersList/>
             )}
-            <div className="m-4">
-                <Tools/>
-            </div>
         </div>
     </>
     )

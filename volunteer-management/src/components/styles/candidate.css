@@ -9,3 +9,7 @@
 .details-text {
     @apply text-lg text-black font-bold col-span-3 text-left -ml-6
 }
+
+.candidate-details-input {
+   @apply col-span-2 text-black font-bold hover:cursor-pointer focus:cursor-text text-left -ml-6 input-ghost bg-transparent focus:text-black focus:font-semibold
+}

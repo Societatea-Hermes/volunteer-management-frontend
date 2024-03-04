@@ -2,6 +2,7 @@ export {};
 
 declare global {
     type Candidate = {
+        ID: number,
         first_name: string;
         last_name: string;
         personal_email: string;
@@ -20,6 +21,7 @@ declare global {
     };
 
     type Volunteer = {
+        ID: number,
         first_name: string;
         last_name: string;
         personal_email: string;
@@ -43,6 +45,7 @@ declare global {
     };
 
     type RecruitmentCampaign = {
+        ID: number,
         name: string;
         start_date: Date;
         end_date: Date;

@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  web:
+    container_name: volunteers-manager
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - "5173:3000"
+    deploy:
+      mode: replicated
+      replicas: 1
+    environment:
+      - VITE_API_HOST=localhost
+      - VITE_APP_PORT=8080

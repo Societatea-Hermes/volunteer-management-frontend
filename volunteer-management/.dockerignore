@@ -1,0 +1,24 @@
+# Ignore files and directories commonly excluded in Docker builds
+.git*
+node_modules/
+coverage/
+.env*
+.npmignore
+.gitignore
+npm-shrinkwrap.json
+yarn.lock
+
+# Ignore build artifacts (adjust based on your build command)
+build/
+dist/
+
+# Ignore test files (optional)
+__tests__/
+*.test.js
+*.test.jsx
+*.spec.js
+*.spec.jsx
+
+# Ignore IDE configuration files (optional)
+.idea/
+.vscode/

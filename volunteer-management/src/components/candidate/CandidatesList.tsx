@@ -1,11 +1,11 @@
 import { SetStateAction, useEffect, useState } from "react";
 
-import { mockCandidates } from "../assets/mocks.ts";
+import { mockCandidates } from "../../assets/mocks.ts";
 import Candidate from "./Candidate.tsx";
-import Paginate from "./Paginate.tsx";
-import { API_CANDIDATES_EP, TOTAL_PER_PAGE } from "../assets/constants.ts";
+import Paginate from "../Paginate.tsx";
+import { API_CANDIDATES_EP, TOTAL_PER_PAGE } from "../../assets/constants.ts";
 import axios from "axios";
-import Modal from "./Modal.tsx";
+import ModalCandidate from "./ModalCandidate.tsx";
 
 function CandidatesList() {
   const [searchCandidate, setSearchCandidate] = useState("");
@@ -24,7 +24,7 @@ function CandidatesList() {
           personal_email: candidateData.personal_email,
           phone: candidateData.phone,
           address: candidateData.address,
-          birthday: new Date(candidateData.birth_date), // Convert string to Date
+          birthday: new Date(candidateData.birth_date),
           gender: candidateData.gender,
           studies_type: candidateData.studies_type,
           specialization: candidateData.specialization,
@@ -92,8 +92,14 @@ function CandidatesList() {
     setIsOpen(false);
     console.log(isOpen);
   };
-  const handleSubmitAddCandidate = (candidate: Candidate) => {
-    console.log(candidate);
+
+  const handleSubmitAddCandidate = async (candidate: Candidate) => {
+    try {
+      const response = await axios.post(API_CANDIDATES_EP, candidate);
+      console.log("Candidate created:", response.data);
+    } catch (error) {
+      console.error("Error creating candidate:", error);
+    }
   };
 
   return (
@@ -153,11 +159,11 @@ function CandidatesList() {
           Add candidate
         </button>
         {isOpen && (
-          <Modal
+          <ModalCandidate
             onClose={handleCloseModal}
             onSubmit={handleSubmitAddCandidate}
             isOpen={isOpen}
-          ></Modal>
+          ></ModalCandidate>
         )}
       </div>
     </>

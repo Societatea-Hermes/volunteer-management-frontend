@@ -1,0 +1,27 @@
+.container-details {
+    @apply grid grid-cols-4 justify-center gap-0;
+}
+
+.details-icon {
+    @apply col-span-1 w-7;
+}
+
+.details-text {
+    @apply col-span-3 -ml-6 text-left text-lg font-bold text-black;
+}
+
+.candidate-details-input {
+    @apply input-ghost col-span-2 -ml-6 bg-transparent text-left font-bold text-black hover:cursor-pointer focus:cursor-text focus:font-semibold focus:text-black;
+}
+
+.add-candidate-input {
+    @apply input w-full rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600;
+}
+
+.add-candidate-cell {
+    @apply grid grid-cols-2 gap-5;
+}
+
+.add-candidate-select {
+    @apply select w-full rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600;
+}

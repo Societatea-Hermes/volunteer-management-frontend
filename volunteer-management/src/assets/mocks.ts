@@ -15,7 +15,7 @@ export const mockCandidates: Candidate[] = [
         facebook_profile: "https://www.facebook.com/ardelean.danielgeorge/",
         instagram_profile: "https://www.instagram.com/_giuco/",
         recruitment_status: "Accepted",
-        recruitment_campaign_id: "1",
+        recruitment_campaign_id: 1,
     },
     {
         ID:2,
@@ -33,7 +33,7 @@ export const mockCandidates: Candidate[] = [
         facebook_profile: "https://www.facebook.com/sidorac.radu",
         instagram_profile: "https://www.instagram.com/bradutfericit/",
         recruitment_status: "Pending",
-        recruitment_campaign_id: "1",
+        recruitment_campaign_id: 1,
     },
     {
         ID:3,
@@ -51,7 +51,7 @@ export const mockCandidates: Candidate[] = [
         facebook_profile: "https://www.facebook.com/ardelean.danielgeorge/",
         instagram_profile: "https://www.instagram.com/_giuco/",
         recruitment_status: "Rejected",
-        recruitment_campaign_id: "1",
+        recruitment_campaign_id: 1,
     },
     {
         ID:4,
@@ -69,7 +69,7 @@ export const mockCandidates: Candidate[] = [
         facebook_profile: "https://www.facebook.com/sidorac.radu",
         instagram_profile: "https://www.instagram.com/bradutfericit/",
         recruitment_status: "Accepted",
-        recruitment_campaign_id: "1",
+        recruitment_campaign_id: 1,
     },
     {
         ID:5,
@@ -87,7 +87,7 @@ export const mockCandidates: Candidate[] = [
         facebook_profile: "https://www.facebook.com/sidorac.radu",
         instagram_profile: "https://www.instagram.com/bradutfericit/",
         recruitment_status: "Pending",
-        recruitment_campaign_id: "2",
+        recruitment_campaign_id: 2,
     },
     {
         ID:6,
@@ -105,7 +105,7 @@ export const mockCandidates: Candidate[] = [
         facebook_profile: "https://www.facebook.com/sidorac.radu",
         instagram_profile: "https://www.instagram.com/bradutfericit/",
         recruitment_status: "Rejected",
-        recruitment_campaign_id: "1",
+        recruitment_campaign_id: 1,
     },
     {
         ID:7,
@@ -123,7 +123,7 @@ export const mockCandidates: Candidate[] = [
         facebook_profile: "https://www.facebook.com/sidorac.radu",
         instagram_profile: "https://www.instagram.com/bradutfericit/",
         recruitment_status: "Pending",
-        recruitment_campaign_id: "1",
+        recruitment_campaign_id: 1,
     },
     {
         ID:8,
@@ -141,7 +141,7 @@ export const mockCandidates: Candidate[] = [
         facebook_profile: "https://www.facebook.com/sidorac.radu",
         instagram_profile: "https://www.instagram.com/bradutfericit/",
         recruitment_status: "Accepted",
-        recruitment_campaign_id: "1",
+        recruitment_campaign_id: 1,
     },
     {
         ID:9,
@@ -159,7 +159,7 @@ export const mockCandidates: Candidate[] = [
         facebook_profile: "https://www.facebook.com/sidorac.radu",
         instagram_profile: "https://www.instagram.com/bradutfericit/",
         recruitment_status: "Pending",
-        recruitment_campaign_id: "1",
+        recruitment_campaign_id: 1,
     },
     {
         ID:10,
@@ -177,7 +177,7 @@ export const mockCandidates: Candidate[] = [
         facebook_profile: "https://www.facebook.com/sidorac.radu",
         instagram_profile: "https://www.instagram.com/bradutfericit/",
         recruitment_status: "Rejected",
-        recruitment_campaign_id: "1",
+        recruitment_campaign_id: 1,
     },
     {
         ID:11,
@@ -195,7 +195,7 @@ export const mockCandidates: Candidate[] = [
         facebook_profile: "https://www.facebook.com/sidorac.radu",
         instagram_profile: "https://www.instagram.com/bradutfericit/",
         recruitment_status: "Pending",
-        recruitment_campaign_id: "1",
+        recruitment_campaign_id: 1,
     },
     {
         ID:12,
@@ -213,6 +213,6 @@ export const mockCandidates: Candidate[] = [
         facebook_profile: "https://www.facebook.com/sidorac.radu",
         instagram_profile: "https://www.instagram.com/bradutfericit/",
         recruitment_status: "Accepted",
-        recruitment_campaign_id: "1",
+        recruitment_campaign_id: 1,
     },
 ];

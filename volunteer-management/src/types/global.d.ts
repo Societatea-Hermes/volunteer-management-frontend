@@ -17,7 +17,7 @@ declare global {
         facebook_profile: string;
         instagram_profile: string;
         recruitment_status: string;
-        recruitment_campaign_id: string;
+        recruitment_campaign_id: number;
     };
 
     type Volunteer = {

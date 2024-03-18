@@ -68,7 +68,7 @@ const Candidate = (props: CandidateProps) => {
 
     const handleDeleteCandidate = () => {
         axios
-            .delete(`${API_CANDIDATES_EP}/${candidateData.personal_email}`)
+            .delete(`${API_CANDIDATES_EP}/candidate/${candidateData.personal_email}`)
             .then(() => {
                 props.onCandidateDeleted();
             })

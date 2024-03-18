@@ -15,29 +15,39 @@ function CandidatesList() {
 
     // Fetch candidates
     useEffect(() => {
-        axios.get(API_CANDIDATES_EP).then((res) => {
-            const cl: Candidate[] = res.data.map((candidateData: any) => {
-                return {
-                    ID: candidateData.ID,
-                    first_name: candidateData.first_name,
-                    last_name: candidateData.last_name,
-                    personal_email: candidateData.personal_email,
-                    phone: candidateData.phone,
-                    address: candidateData.address,
-                    birthday: new Date(candidateData.birth_date),
-                    gender: candidateData.gender,
-                    studies_type: candidateData.studies_type,
-                    specialization: candidateData.specialization,
-                    study_group: candidateData.study_group,
-                    study_language: candidateData.study_language,
-                    facebook_profile: candidateData.facebook_profile,
-                    instagram_profile: candidateData.instagram_profile,
-                    recruitment_status: candidateData.recruitment_status,
-                    recruitment_campaign_id: candidateData.recruitment_campaign_id,
-                };
-            });
-            setCandidates(cl);
-            setFilteredCandidates(cl);
+        axios.get(API_CANDIDATES_EP)
+            .then((res) => {
+                if(res.data.length > 0) {
+                    const cl: Candidate[] = res.data.map((candidateData: any) => {
+                        return {
+                            ID: candidateData.ID,
+                            first_name: candidateData.first_name,
+                            last_name: candidateData.last_name,
+                            personal_email: candidateData.personal_email,
+                            phone: candidateData.phone,
+                            address: candidateData.address,
+                            birthday: new Date(candidateData.birth_date),
+                            gender: candidateData.gender,
+                            studies_type: candidateData.studies_type,
+                            specialization: candidateData.specialization,
+                            study_group: candidateData.study_group,
+                            study_language: candidateData.study_language,
+                            facebook_profile: candidateData.facebook_profile,
+                            instagram_profile: candidateData.instagram_profile,
+                            recruitment_status: candidateData.recruitment_status,
+                            recruitment_campaign_id: candidateData.recruitment_campaign_id,
+                        };
+                    });
+                    setCandidates(cl);
+                    setFilteredCandidates(cl);
+                } else {
+                    setCandidates(mockCandidates);
+                    setFilteredCandidates(mockCandidates);
+                }
+
+            }).catch(() => {
+            setCandidates(mockCandidates);
+            setFilteredCandidates(mockCandidates);
         });
         setChangedList(false);
     }, [changedList]);
@@ -93,6 +103,7 @@ function CandidatesList() {
         try {
             const response = await axios.post(API_CANDIDATES_EP, candidate);
             console.log("Candidate created:", response.data);
+            setChangedList(true);
         } catch (error) {
             console.error("Error creating candidate:", error);
         }
